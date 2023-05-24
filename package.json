@@ -6,6 +6,8 @@
   "private": true,
   "dependencies": {
     "@swc/helpers": "~0.5.0",
+    "@tanstack/react-query": "5.0.0-alpha.35",
+    "@tanstack/react-query-devtools": "5.0.0-alpha.35",
     "react": "18.2.0",
     "react-dom": "18.2.0"
   },
@@ -45,6 +47,7 @@
     "tailwindcss": "3.2.7",
     "typescript": "~5.0.2",
     "vite": "^4.3.4",
+    "vite-plugin-dts": "~1.7.1",
     "vite-plugin-eslint": "^1.8.1",
     "vite-tsconfig-paths": "^4.0.2",
     "vitest": "^0.31.0"

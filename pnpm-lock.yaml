@@ -2,7 +2,7 @@ lockfileVersion: 5.4
 
 specifiers:
   '@nx/cypress': 16.2.2
-  '@nx/devkit': ^16.2.2
+  '@nx/devkit': 16.2.2
   '@nx/eslint-plugin': 16.2.2
   '@nx/js': 16.2.2
   '@nx/linter': 16.2.2
@@ -10,7 +10,7 @@ specifiers:
   '@nx/vite': 16.2.2
   '@nx/workspace': 16.2.2
   '@nxrocks/common': ^2.4.3
-  '@nxrocks/nx-ktor': ^2.0.3
+  '@nxrocks/nx-ktor': ^2.0.5
   '@swc/cli': ~0.1.62
   '@swc/core': ~1.3.51
   '@swc/helpers': ~0.5.0
@@ -36,7 +36,7 @@ specifiers:
   eslint-plugin-react-hooks: 4.6.0
   jsdom: ~20.0.3
   nx: 16.2.2
-  nx-cloud: latest
+  nx-cloud: 16.0.5
   postcss: 8.4.21
   prettier: ^2.6.2
   react: 18.2.0
@@ -66,7 +66,7 @@ devDependencies:
   '@nx/vite': 16.2.2_bu7s37awzxrnlpu7r64y3w25ey
   '@nx/workspace': 16.2.2_@swc+core@1.3.59
   '@nxrocks/common': 2.4.3_blkjldbyx62s6ltbrjcxwmqqfq
-  '@nxrocks/nx-ktor': 2.0.3_v2qdlum3a4pamq5igvbwjhdn6m
+  '@nxrocks/nx-ktor': 2.0.5_v2qdlum3a4pamq5igvbwjhdn6m
   '@swc/cli': 0.1.62_@swc+core@1.3.59
   '@swc/core': 1.3.59_@swc+helpers@0.5.1
   '@testing-library/react': 14.0.0_biqbaboplfbrettd7655fr4n2y
@@ -2371,8 +2371,8 @@ packages:
       xpath: 0.0.32
     dev: true
 
-  /@nxrocks/nx-ktor/2.0.3_v2qdlum3a4pamq5igvbwjhdn6m:
-    resolution: {integrity: sha512-fM9tcEdP6RuVRNkxgAok9N4geQq1OIV9YODgiYXIVVQ93WSjxXTCQZlPSw0KGHQa1UmSjaJk54STDxNANbwA8A==}
+  /@nxrocks/nx-ktor/2.0.5_v2qdlum3a4pamq5igvbwjhdn6m:
+    resolution: {integrity: sha512-9RAqT7UvmvJGo8IQ/pKJpE6rrwLx+t+IAU90u2hdqFvnnwCTmNmax1J9D1bzqIcRQzTjPjb4zRiQ+XvvKFOEdg==}
     peerDependencies:
       '@nx/devkit': '>=16.0.0'
       '@nx/workspace': '>=16.0.0'

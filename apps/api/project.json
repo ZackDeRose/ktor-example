@@ -1,0 +1,64 @@
+{
+  "name": "api",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/api/src",
+  "projectType": "application",
+  "targets": {
+    "serve": {
+      "executor": "@nxrocks/nx-ktor:run",
+      "options": {
+        "root": "apps/api"
+      }
+    },
+    "test": {
+      "executor": "@nxrocks/nx-ktor:test",
+      "options": {
+        "root": "apps/api"
+      },
+      "outputs": ["{workspaceRoot}/apps/api/build"]
+    },
+    "clean": {
+      "executor": "@nxrocks/nx-ktor:clean",
+      "options": {
+        "root": "apps/api"
+      }
+    },
+    "build": {
+      "executor": "@nxrocks/nx-ktor:build",
+      "options": {
+        "root": "apps/api"
+      },
+      "dependsOn": ["^install"],
+      "outputs": ["{workspaceRoot}/apps/api/build"]
+    },
+    "build-image": {
+      "executor": "@nxrocks/nx-ktor:build-image",
+      "options": {
+        "root": "apps/api"
+      },
+      "outputs": ["{workspaceRoot}/apps/api/build"]
+    },
+    "publish-image": {
+      "executor": "@nxrocks/nx-ktor:publish-image",
+      "options": {
+        "root": "apps/api"
+      },
+      "dependsOn": ["build-image"]
+    },
+    "publish-image-locally": {
+      "executor": "@nxrocks/nx-ktor:publish-image-locally",
+      "options": {
+        "root": "apps/api"
+      },
+      "dependsOn": ["build-image"]
+    },
+    "run-docker": {
+      "executor": "@nxrocks/nx-ktor:run-docker",
+      "options": {
+        "root": "apps/api"
+      },
+      "dependsOn": ["build-image"]
+    }
+  },
+  "tags": []
+}
